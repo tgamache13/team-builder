@@ -14,13 +14,13 @@ const MemberForm = props => {
     };
 
     return (
-        <form onSubmit={submitForm}>
+        <form onSubmit={e => submitForm(e)}>
             <label htmlFor="name">Name</label>
                  <input
                     id="name"
                     type="text"
                     name="name"
-                    onChange={handleChanges}
+                    onChange={e => handleChanges(e)}
                     value={member.name}
                 />
             <label htmlFor="email">Email</label>
@@ -28,7 +28,7 @@ const MemberForm = props => {
                     id="email"
                     type="text"
                     name="email"
-                    onChange={handleChanges}
+                    onChange={e => handleChanges(e)}
                     value={member.email}
                  />
             <lable htmlFor="role">Role</lable>
@@ -36,10 +36,10 @@ const MemberForm = props => {
                     id="role"
                     type="text"
                     name="role"
-                    onChange={handleChanges}
+                    onChange={e => handleChanges(e)}
                     value={member.role}
                 />
-            <button className="addButton" type="Add">Add Team Member</button>
+            <button className="addButton" type="Add" >Add Team Member</button>
         </form>
     );
 };

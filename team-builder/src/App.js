@@ -10,14 +10,7 @@ import "./styles.scss";
 import './App.css';
 
 function App() {
-  const [members, setMembers] = useState([
-    {
-      id: 1,
-      name: "Tara Gamache",
-      email: "tara.gamache13@gmail.com",
-      role: "Designer"
-    }
-  ]);
+  const [members, setMembers] = useState([]);
 
   const addNewMember = member => {
     const newMember = {
@@ -33,8 +26,11 @@ function App() {
       <h1>Team Member List</h1>
       <Form addNewMember={addNewMember} />
       <Members members={members} />
+      
     </div>
   );
+    
+ 
 }
 
 export default App;
