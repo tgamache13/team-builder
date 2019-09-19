@@ -1,0 +1,38 @@
+
+.App {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+input {
+    border: 1px solid darkorchid;
+}
+.addButton {
+    margin-top: 5%;
+    width: 30%;
+    margin-left: 35%;
+    margin-bottom: 5%;
+    background: silver;
+    box-shadow: 0 5px 10px darkorchid;
+}
+.member-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.member {
+    width: 25%;
+    margin: 2%;
+    border: 1px solid grey;
+    padding: 5%;
+    box-shadow: 0 5px 10px darkorchid;
+}
+.member-email {
+    width: 95%;
+}
